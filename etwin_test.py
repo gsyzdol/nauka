@@ -45,7 +45,7 @@ class SearchTests(unittest.TestCase):
 
         #check sign up for confirmation is checked
         checkbox_dec = driver.find_element_by_name("uap")
-        AsertTrue(checkbox_dec.is_selected())
+        self.assertTrue(checkbox_dec.is_selected())
         #	fill out	all	the	fields
         first_name.send_keys("Test")
         last_name.send_keys("User1")
